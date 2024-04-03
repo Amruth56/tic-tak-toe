@@ -31,12 +31,37 @@ body {
   border-radius: 1rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
   font-size: 8vmin;
+  background-color: antiquewhite;
+  color: black;
 }
 
-#reset{
-    padding: 1rem;
-    font-size: 1.5rem;
-    background-color: #129790;
-    border-radius: 30%;
-    /* border: none; */
+#reset {
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #129790;
+  border-radius: 20%;
+  /* border: none; */
+}
+#new-btn {
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: rgb(177, 145, 103);
+  border-radius: 15%;
+  color: black;
+}
+
+#msg {
+  color: antiquewhite;
+  font-size: 5vmin;
+  margin: 25px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.msg-container {
+  height: 30vmin;
+}
+
+.hide {
+  display: none;
 }
