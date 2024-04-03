@@ -31,10 +31,12 @@ boxes.forEach((box) => {
       //playerO
       box.innerText = "O";
       turnO = false;
+      box.style.color="green"
     } else {
       //playerX
       box.innerText = "X";
       turnO = true;
+      box.style.color="aqua";
     }
     box.disabled = true;
     count++;
@@ -56,6 +58,7 @@ const gameDraw = () => {
 const disableBoxes = () => {
   for (let box of boxes) {
     box.disabled = true;
+    
   }
 };
 
