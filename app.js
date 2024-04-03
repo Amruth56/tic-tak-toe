@@ -1,9 +1,7 @@
 let boxes = document.querySelectorAll(".box");
 let resetBtn = document.querySelector("#reset");
 
-let turn0 = true;
-
-console.log('hi')
+let turnO = true;
 
 const winPattern = [
   [0, 1, 2],
@@ -19,8 +17,13 @@ const winPattern = [
 boxes.forEach((box) => {
   box.addEventListener("click", () => {
     console.log("box was clicked ");
+
+    if (turnO) {
+      box.innerText = "O";
+      turnO = false;
+    } else {
+      box.innerText = "X";
+      turnO = true;
+    }
   });
 });
-
-resetBtn.addEventListener("click", ()=>{
-    console.log('you cave clicked the reset button');  })
